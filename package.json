@@ -5,8 +5,9 @@
   "main": "agent.ts",
   "packageManager": "pnpm@9.15.9",
   "scripts": {
-    "start": "adk web . --host 0.0.0.0 --port ${PORT:-8000}",
-    "dev": "adk web . --port 8000",
+    "start": "node ./scripts/fix-adk-devui.mjs && adk web . --host 0.0.0.0 --port ${PORT:-8000}",
+    "dev": "node ./scripts/fix-adk-devui.mjs && adk web . --port 8000",
+    "postinstall": "node ./scripts/fix-adk-devui.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
