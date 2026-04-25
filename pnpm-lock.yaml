@@ -4,6 +4,8 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+packageExtensionsChecksum: sha256-QSNAdsLL5tKnzAjoT1SNtsIjDmzKXheg3YFz78u/GSM=
+
 importers:
 
   .:
