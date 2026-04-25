@@ -54,7 +54,7 @@ export const queryResearch = new FunctionTool({
       .describe('Maximum number of knowledge chunks to retrieve. Default 20.'),
     max_price_usdc: z
       .number()
-      .positive()
+      .min(0)
       .max(1)
       .optional()
       .default(0.25)
