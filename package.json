@@ -19,5 +19,12 @@
   },
   "devDependencies": {
     "@google/adk-devtools": "^1.0.0"
+  },
+  "pnpm": {
+    "packageExtensions": {
+      "@google/adk": {
+        "browser": {}
+      }
+    }
   }
 }
