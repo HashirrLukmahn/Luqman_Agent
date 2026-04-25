@@ -20,7 +20,7 @@ export const rootAgent = new LlmAgent({
   model: 'gemini-2.5-flash',
   generateContentConfig: {
     temperature: 0.2,
-    maxOutputTokens: 300,
+    maxOutputTokens: 700,
   },
   description:
     'A research agent that queries the Luqman knowledge marketplace for ' +
