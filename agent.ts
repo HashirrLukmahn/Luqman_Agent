@@ -17,7 +17,11 @@ import { getResearcherEarnings } from './tools/earnings.js';
  */
 export const rootAgent = new LlmAgent({
   name: 'luqman_research_agent',
-  model: 'gemini-2.5-flash',
+  model: 'gemini-2.0-flash',
+  generateContentConfig: {
+    temperature: 0.2,
+    maxOutputTokens: 300,
+  },
   description:
     'A research agent that queries the Luqman knowledge marketplace for ' +
     'unpublished negative research results. Pays researchers automatically ' +
