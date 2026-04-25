@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "agent.ts",
+  "packageManager": "pnpm@9.15.9",
   "scripts": {
     "start": "adk web . --host 0.0.0.0 --port ${PORT:-8000}",
     "dev": "adk web . --port 8000",
@@ -19,12 +20,5 @@
   },
   "devDependencies": {
     "@google/adk-devtools": "^1.0.0"
-  },
-  "pnpm": {
-    "packageExtensions": {
-      "@google/adk": {
-        "browser": {}
-      }
-    }
   }
 }
